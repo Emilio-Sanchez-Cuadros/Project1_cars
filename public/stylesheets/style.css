@@ -1,0 +1,328 @@
+.whiteBackgroundDiv{
+  background-color: whitesmoke;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.sellOrBuyContainer{
+  position: absolute;
+  background-color: whitesmoke;
+  top: 100px;
+  padding: 10px;
+  margin-bottom: 200px;
+}
+
+.indexPhotoContainer {
+  position: relative;
+  margin-bottom: 50px;
+  height: 400px;
+}
+
+.insurancePhotoContainer{
+  position: relative;
+  margin-bottom: 50px;
+  height: 400px;
+   background-image: url("../images/insurance1.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.concesionarioPhoto1{
+  position: absolute;
+  top: 100px;
+  height: 400px;
+  background-image: url("../images/concesionario1.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+
+.concesionarioPhoto2{
+  position: absolute;
+  top: 100px;
+  height: 400px;
+  background-image: url("../images/concesionario2.jpg");
+  background-size: cover;
+  z-index: 0;
+}
+
+.buttonOffers{
+  z-index: 1;
+  border-radius: 50px !important;
+  position: absolute;
+  margin-left: auto;
+  font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    border-radius: 5px;
+    background-color: rgb(255, 67, 67) !important;
+    display: inline-block !important;
+    transition: all .5s !important;
+    cursor: pointer !important;
+    padding: 15px 40px !important;
+  height: 60px;
+  width: 300px
+}
+
+.buttonOffers:hover {
+  background-color:rgb(255, 66, 66) !important;
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+
+}
+
+.offersPhotoContainer{
+  height: 400px;
+}
+
+
+.cardType{
+  border-bottom: 1px black solid !important;
+  background: none !important;
+  border: none !important;
+}
+
+.cardTypeOffersView{
+  background: whitesmoke !important;
+  border: none !important;
+  height: 450px !important;
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  
+}
+
+.descriptionBox {
+  height: 200px;
+  /* border: 2px solid black !important; */
+  background-color: white !important;
+  margin-top: 30px;
+
+}
+
+.form-inline{
+  margin-right: 0px !important;
+}
+
+.btn-outline-success{
+  background-color:rgb(255, 111, 111) !important;
+  border-radius: 50px !important;
+  border: none !important;
+  color: whitesmoke !important;
+}
+
+.btn-outline-success:hover{
+  background-color:rgb(255, 66, 66) !important;
+}
+
+h1 {
+  color: rgb(255, 111, 111);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: rgb(255, 111, 111);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold !important;
+}
+
+h4 {
+  color:rgb(255, 111, 111);
+}
+
+h5 {
+  color: rgb(255, 111, 111);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold !important;
+}
+
+h6 {
+  color: rgb(255, 111, 111);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.background {
+  /* background-image: url("http://technopoint.com.ar/wp-content/uploads/2018/06/Technology-Background-3.jpg"); */
+  background-color: rgb(226, 226, 226);
+}
+
+.cardInfo {
+  margin-bottom: 10px !important;
+}
+
+.carrusel{
+  height: 300px !important;
+}
+
+.carouselButton {
+  visibility: hidden;
+}
+
+.dropdownBrand {
+  background-color: rgb(255, 111, 111) !important;
+  border: none !important;
+}
+
+.buttonSubmit {
+  border-radius: 50px !important;
+  font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+  height: 45px;
+  background-color: rgb(255, 111, 111) !important;
+  border: none !important;
+}
+
+.buttonSubmit:hover {
+  background-color:rgb(255, 66, 66) !important;
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+
+}
+
+.description{
+  height: 130px !important;
+  margin-bottom: 15px !important;
+}
+
+
+.formSpacing{
+  margin-bottom: 10px;
+}
+
+.cardsCars{
+  display: inline ;
+}
+
+
+.userButton{
+  margin-top: 10px;
+  border-radius: 50px !important;
+  font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+  background-color: rgb(255, 111, 111) !important;
+  border: none !important;
+}
+
+.userButton:hover {
+  background-color:rgb(255, 66, 66) !important;
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+
+}
+
+.cardOffers{
+  margin-top: 50px !important;
+}
+
+.imgCards {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer{
+  background-color: whitesmoke;
+  height: 50px;
+}
+
+.uploadFile {
+  background: transparent !important;
+  box-sizing: content-box !important;
+  border-radius: 50px !important;
+  width: 385px !important;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.labelUpload{
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border-radius: 50px;
+    color: #fff !important;
+    background-color: rgb(255, 111, 111) !important;;
+    display: inline-block !important;
+    transition: all .5s !important;
+    cursor: pointer !important;
+    padding: 15px 40px !important;
+    width: 100% !important;
+    text-align: center !important;
+    }
+
+    .labelUpload:hover {
+      background-color:rgb(255, 66, 66) !important;
+      -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+      -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+      box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+    
+    }
+
+.cardsRowContainer {
+    background: whitesmoke !important;
+    border: none !important;
+    margin-top: 50px !important;
+    width: 100%;
+
+}
+
+.infoDiv {
+  margin-top: 55px;
+  margin-left: 15px;
+}
+
+.infoDivCarDetails {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.adminDiv{
+  display: inline !important;
+  top: 100px;
+}
+
+.buttonCalc {
+  font-size: 16px !important;
+  border-radius: 50px !important;
+  width: 100%;
+    font-weight: 600 !important;
+    color: #fff !important;
+  height: 45px;
+  background-color: rgb(255, 111, 111) !important;
+  border: none !important;
+  margin-bottom: 20px;
+}
+
+.buttonCalc:hover {
+  background-color:rgb(255, 66, 66) !important;
+  -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+  box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.53);
+
+}
+
+.inputPantalla{
+  width: 100% !important;
+  margin-top: 10px;
+}
+
+.calcDiv{
+  display: inline;
+  top: 100px;
+}
+

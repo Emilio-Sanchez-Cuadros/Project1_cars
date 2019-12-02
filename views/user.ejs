@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>User view</title>
+</head>
+
+<body class="background">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">ARR cars</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user">User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/offers">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/insurance">Insurance</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid head">
+        <div class="row">
+            <div class="col-12 whiteBackgroundDiv">
+                <h1>Upload a car</h1>
+            </div>
+        </div>
+        <div class="col-8">
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..\images\Alfa.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\images\BMW.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\images\VW.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..\images\Fiat.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev carouselButton" href="#carouselExampleControls" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next carouselButton" href="#carouselExampleControls" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-6">
+                        <form action="/user" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <span>
+                                    <input type="file" class="form-control shadow p-3 mb-5 bg-white rounded uploadFile"
+                                        name="photo" id="uploadFile" required>
+                                </span>
+                                <label for="uploadFile" class="labelUpload"><span>Upload picture</span></label>
+                            </div>
+                            <select id="select" class="form-control formSpacing" name="name" required>
+                                <option disabled="disabled">Choose a brand</option>
+                                <% brands.forEach(function(brand){ %>
+                                <option>
+                                    <%= brand.name %></option>
+                                <% }) %>
+                            </select>
+                            <div class="form-group">
+                                <input name="model" type="text" class="form-control" id="exampleInputPassword1"
+                                    placeholder="insert model" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="year" type="text" class="form-control" id="exampleInputPassword1"
+                                    placeholder="insert year" required>
+                            </div>
+                            <div class="form-group">
+                                <input name="kms" type="text" class="form-control" id="exampleInputPassword1"
+                                    placeholder="insert kms" required>
+                            </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input name="price" type="text" class="form-control" id="exampleInputPassword1"
+                                placeholder="insert price">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control formSpacing" name="country" required>
+                                <option disabled="disabled">Choose a country</option>
+                                <option>Austria</option>
+                                <option>Belgium</option>
+                                <option>Bulgaria</option>
+                                <option>Croatia</option>
+                                <option>Republic of Cyprus</option>
+                                <option>Czech Republic</option>
+                                <option>Denmark</option>
+                                <option>Estonia</option>
+                                <option>Finland</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Greece</option>
+                                <option>Hungary</option>
+                                <option>Ireland</option>
+                                <option>Italy</option>
+                                <option>Latvia</option>
+                                <option>Lithuania</option>
+                                <option>Luxembourg</option>
+                                <option>Malta</option>
+                                <option>Netherlands</option>
+                                <option>Poland</option>
+                                <option>Portugal</option>
+                                <option>Romania</option>
+                                <option>Slovakia</option>
+                                <option>Slovenia</option>
+                                <option>Spain</option>
+                                <option>Sweden</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <h5>Description</h5>
+                            <textarea rows="4" type="text" class="form-control shadow p-3 mb-5 bg-white rounded"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="limit 450 characters"
+                                name="description">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary buttonSubmit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid head">
+        <div class="row">
+            <div class="col-12 whiteBackgroundDiv">
+                <h1>Your cars</h1>
+            </div>
+            <div class="col-8">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <% results.forEach(function(brand){ %>
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="row cardsRowContainer">
+                    <div class="col-3">
+                        <div class="card cardInfo cardType" style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= brand.name %></h5>
+                                <img class="imgCards" src="../uploads/<%= brand.photo %>" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 infoDiv">
+                        <p class="card-text"><strong>Source country:</strong> <%= brand.country %></p>
+                        <p class="card-text"><strong>Model:</strong> <%= brand.model %></p>
+                        <p class="card-text"><strong>Model:</strong> <%= brand.year %></p>
+                        <p class="card-text"><strong>Kms:</strong> <%= brand.kms %></p>
+                        <p class="card-text"><strong>Price:</strong> <%= brand.price %></p>
+                    </div>
+                    <div class="col-5 descriptionBox">
+                        <p><%= brand.description %></p>
+                    </div>
+                </div>
+                <a href="/user/delete/<%= brand.model_id %>" class="btn btn-primary userButton">Delete</a>
+                <a href="/userCars/edit/<%= brand.model_id %>" class="btn btn-primary userButton">Edit</a>
+            </div>
+            <div class="col-1"></div>
+            <% }) %>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script type="application/javascript">
+        jQuery('input[type=file]').change(function () {
+            var filename = jQuery(this).val().split('\\').pop();
+            var idname = jQuery(this).attr('id');
+            console.log(jQuery(this));
+            console.log(filename);
+            console.log(idname);
+            jQuery('span.' + idname).next().find('span').html(filename);
+        });
+
+    </script>
+</body>
+
+</html>
